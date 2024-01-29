@@ -1,0 +1,57 @@
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 12px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        opacity: 0.5;
+        line-height: normal;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__icon {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        &--green {
+            background-color: #e6f5b8;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        &__title {
+            font-size: 16px;
+        }
+
+        &__subtitle {
+            font-size: 24px;
+        }
+
+        &__icon {
+            width: 36px;
+            height: 36px;
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

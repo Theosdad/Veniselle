@@ -1,0 +1,95 @@
+.traits {
+    @include border-radius;
+    border: 2px solid #ececec;
+    padding: 12px;
+    flex-grow: 1;
+    position: relative;
+
+    &__heading {
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        padding-left: 18px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        color: #000000;
+        margin-bottom: 12px;
+    }
+
+    &__item {
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: #000000;
+
+            position: absolute;
+            top: 50%;
+            left: -12px;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__image {
+        display: none;
+    }
+
+    @media (min-width: $desktop) {
+        flex-basis: 568px;
+        padding: 12px 16px;
+
+        &__heading {
+            margin-bottom: 15px;
+
+            h2 {
+                padding-right: 150px;
+            }
+
+            h3 {
+                max-width: 450px;
+                font-size: 36px;
+                padding-right: 100px;
+            }
+        }
+
+        &__list {
+            row-gap: 0;
+            padding-right: 260px;
+        }
+
+        &__item {
+            font-size: 16px;
+            line-height: 180%;
+
+            &::before {
+                width: 4px;
+                height: 4px;
+            }
+        }
+
+        &__icons {
+            justify-content: flex-start;
+        }
+
+        &__image {
+            display: block;
+            position: absolute;
+            right: 21px;
+            bottom: 0;
+        }
+    }
+}

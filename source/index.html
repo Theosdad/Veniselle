@@ -1,1 +1,1203 @@
+<!DOCTYPE html>
+<html lang="ru">
 
+<head>
+  <meta charset="UTF-8">
+  <title>Veniselle</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicons/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,500;0,700;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__title">
+        <a href="#form">
+          <h1>Veniselle</h1>
+        </a>
+      </div>
+      <div class="header__signs signs">
+        <ul class="signs__list reset-list">
+          <li class="signs__item">
+            <svg aria-hidden="true" focusable="false" width="36" height="36">
+              <use href="img/icons/stack.svg#eco"></use>
+            </svg>
+          </li>
+          <li class="signs__item">
+            <svg aria-hidden="true" focusable="false" width="36" height="36">
+              <use href="img/icons/stack.svg#animal"></use>
+            </svg>
+          </li>
+          <li class="signs__item">
+            <svg aria-hidden="true" focusable="false" width="36" height="36">
+              <use href="img/icons/stack.svg#organic"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <div class="header__slogan">
+        <h2>
+          A cream with a professional treatment effect to get rid of spider veins.
+        </h2>
+        <ul class="header__slogan-list reset-list">
+          <li>
+            <a href="#form">antispider veins</a>
+          </li>
+          <li>
+            <a href="#form">no injections</a>
+          </li>
+          <li>
+            <a href="#form">beauty legs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__image">
+          <img src="./img/product.png" alt="image of product." width="114" height="232">
+          <img src="./img/hero-image.jpg" alt="legs." width="179" style="height: 100%;">
+        </div>
+        <div class="hero__form form">
+          <div class="form__wrapper">
+            <div class="form__heading heading">
+              <div class="heading__wrapper">
+                <h3 class="heading__subtitle">Veniselle Order Form</h3>
+              </div>
+              <div class="heading__icon">
+                <svg aria-hidden="true" focusable="false" width="16" height="16">
+                  <use href="img/icons/stack.svg#shopping"></use>
+                </svg>
+              </div>
+            </div>
+            <form action="" method="post">
+              <input class="form__input" name="name" placeholder="Isabella" type="text">
+              <div class="form__input-wrapper">
+                <div class="form__select-wrapper">
+                  <select class="form__input form__input--select" id="country_code_selector" name="country_code">
+                    <option value="MX">MX</option>
+                  </select>
+                </div>
+                <input class="only_number form__input form__input--number" name="phone" placeholder="12-34-5678"
+                  type="tel">
+              </div>
+              <button class="form__submit js_submit button__text button">Order</button>
+            </form>
+          </div>
+          <div class="form__features">
+            <div class="form__price price">
+              <div class="price__wrapper">
+                <del class="price__old">$75</del>
+                <span class="price__new">
+                  <span>$39</span>
+                  <small>.90</small>
+                </span>
+              </div>
+            </div>
+            <div class="form__timer timer">
+              <h2>Discount left</h2>
+              <div class="timer__count">
+                <span class="timer__hours"></span>
+                <span>:</span>
+                <span class="timer__minutes"></span>
+                <span>:</span>
+                <span class="timer__seconds"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__slider customer-review">
+          <div class="customer-review__heading heading">
+            <div class="heading__wrapper">
+              <h2 class="heading__title">Customer review</h2>
+              <h3 class="heading__subtitle">94% positive feedback</h3>
+            </div>
+            <div class="heading__icon">
+              <svg aria-hidden="true" focusable="false" width="16" height="16">
+                <use href="img/icons/stack.svg#thumbs-up"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="customer-review__slider swiper">
+            <ul class="customer-review__list reset-list swiper-wrapper">
+              <li class="customer-review__item swiper-slide">
+                <div class="customer-review__image customer-review__image--left customer-review__image--small">
+                  <img src="./img/customer_image-3.png" alt="Maria." width="96">
+                </div>
+                <div class="customer-review__image">
+                  <img src="./img/customer_image-2.png" alt="Lisa." width="96">
+                </div>
+                <div class="customer-review__image customer-review__image--right customer-review__image--small">
+                  <img src="./img/customer_image-1.png" alt="Luchia." width="96">
+                </div>
+                <div class="customer-review__content">
+                  <span>Lucia, 34 y.o.</span>
+                  <div style="max-width: 300px; margin: 0 auto;">
+                    <p><i>much better than laser</i></p>
+                  </div>
+                </div>
+              </li>
+              <li class="customer-review__item swiper-slide">
+                <div class="customer-review__image customer-review__image--left customer-review__image--small">
+                  <img src="./img/customer_image-2.png" alt="Lisa." width="96">
+                </div>
+                <div class="customer-review__image">
+                  <img src="./img/customer_image-1.png" alt="Luchia." width="96">
+                </div>
+                <div class="customer-review__image customer-review__image--right customer-review__image--small">
+                  <img src="./img/customer_image-3.png" alt="Maria." width="96">
+                </div>
+                <div class="customer-review__content">
+                  <span>Lisa, 38 y.o.</span>
+                  <div style="max-width: 300px; margin: 0 auto;">
+                    <p><i>erased all of the spider veins as just like an eraser</i></p>
+                  </div>
+                </div>
+              </li>
+              <li class="customer-review__item swiper-slide">
+                <div class="customer-review__image customer-review__image--left customer-review__image--small">
+                  <img src="./img/customer_image-1.png" alt="Luchia." width="96">
+                </div>
+                <div class="customer-review__image">
+                  <img src="./img/customer_image-3.png" alt="Maria." width="96">
+                </div>
+                <div class="customer-review__image customer-review__image--right customer-review__image--small">
+                  <img src="./img/customer_image-2.png" alt="Lisa." width="96">
+                </div>
+                <div class="customer-review__content">
+                  <span>Maria, 43 y.o.</span>
+                  <div style=" max-width: 300px; margin: 0 auto;">
+                    <p><i>after a month the "spider veins" disappeared</i></p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+            <button
+              class="customer-review__slider-button customer-review__slider-button--prev swiper-button-prev"></button>
+            <button
+              class="customer-review__slider-button customer-review__slider-button--next swiper-button-next"></button>
+            <div style="display: flex; justify-content: center;">
+              <div class="customer-review__slider-pagination swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery__container container">
+        <div class="gallery__title">
+          <h3>Spider Veins: body painting you didn't plan</h3>
+        </div>
+      </div>
+      <div class="gallery__slider">
+        <ul class="gallery__slider-wrapper slider-wrapper reset-list">
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-1.png" alt="gallery image." width="210" height="126">
+          </li>
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-2.png" alt="gallery image." width="210" height="126">
+          </li>
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-3.png" alt="gallery image." width="210" height="126">
+          </li>
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-4.png" alt="gallery image." width="210" height="126">
+          </li>
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-5.png" alt="gallery image." width="210" height="126">
+          </li>
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-6.png" alt="gallery image." width="210" height="126">
+          </li>
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-7.png" alt="gallery image." width="210" height="126">
+          </li>
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-8.png" alt="gallery image." width="210" height="126">
+          </li>
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-1.png" alt="gallery image." width="210" height="126">
+          </li>
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-2.png" alt="gallery image." width="210" height="126">
+          </li>
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-3.png" alt="gallery image." width="210" height="126">
+          </li>
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-4.png" alt="gallery image." width="210" height="126">
+          </li>
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-5.png" alt="gallery image." width="210" height="126">
+          </li>
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-6.png" alt="gallery image." width="210" height="126">
+          </li>
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-7.png" alt="gallery image." width="210" height="126">
+          </li>
+          <li class="gallery__slide slide">
+            <img src="./img/gallery-image-8.png" alt="gallery image." width="210" height="126">
+          </li>
+        </ul>
+      </div>
+
+      <div class="gallery__container container">
+        <div class="gallery__wrapper">
+          <div class="gallery__limitations limitations">
+            <div class="limitations__heading heading">
+              <div class="heading__wrapper">
+                <h2 class="heading__title">These "patterns" do not beautify your legs</h2>
+                <h3 class="heading__subtitle">Every day it brings discomfort to your life</h3>
+              </div>
+              <div class="heading__icon">
+                <svg aria-hidden="true" focusable="false" width="16" height="16">
+                  <use href="img/icons/stack.svg#thumbs-down"></use>
+                </svg>
+              </div>
+            </div>
+            <ul class="limitations__list reset-list">
+              <li class="limitations__item">Jeans or tights in the summer heat</li>
+              <li class="limitations__item">A long beach wrap instead of a brightly colored bikini</li>
+              <li class="limitations__item">Maxis instead of minis</li>
+            </ul>
+          </div>
+          <div class="gallery__traits traits">
+            <div class="traits__heading heading">
+              <div class="heading__wrapper">
+                <h2 class="heading__title">Do you want to get rid of spider veins?</h2>
+                <h3 class="heading__subtitle">We can help you!</h3>
+              </div>
+              <div class="heading__icon heading__icon--green">
+                <svg aria-hidden="true" focusable="false" width="16" height="16">
+                  <use href="img/icons/stack.svg#check-circle"></use>
+                </svg>
+              </div>
+            </div>
+            <ul class="traits__list reset-list">
+              <li class="traits__item">No doctor's appointments</li>
+              <li class="traits__item">No pain or injections</li>
+              <li class="traits__item">No expensive treatments</li>
+            </ul>
+            <div class="traits__icons">
+              <svg aria-hidden="true" focusable="false" width="50" height="50">
+                <use href="img/icons/stack.svg#no-docs"></use>
+              </svg>
+              <svg aria-hidden="true" focusable="false" width="50" height="50">
+                <use href="img/icons/stack.svg#no-pain"></use>
+              </svg>
+              <svg aria-hidden="true" focusable="false" width="50" height="50">
+                <use href="img/icons/stack.svg#no-bills"></use>
+              </svg>
+            </div>
+            <img class="traits__image" src="./img/traits-bg.png" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__container container">
+        <div class="advantages__components components">
+          <ul class="components__list reset-list">
+
+            <li class="components__item components__item--first">
+              <div class="components__heading heading">
+                <div class="heading__wrapper">
+                  <h2 class="heading__title">Veniselle Cream</h2>
+                  <h3 class="heading__subtitle">Veniselle Cream: Your Spider Veins Remover</h3>
+                </div>
+
+              </div>
+              <p>
+                Veniselle is the first cream with professional treatment effect, focused on removing the vasculature on
+                the legs.
+              </p>
+              <p>
+                With regular use, the cream has a triple effect on damaged and dilated vessels, comparable to surgical
+                procedures.
+              </p>
+            </li>
+
+            <li class="components__item">
+              <div class="components__heading heading">
+                <div class="heading__wrapper">
+                  <h4 class="heading__title">Narrows veins and capillaries</h4>
+                </div>
+                <div class="heading__icon">
+                  <svg aria-hidden="true" focusable="false" width="16" height="16">
+                    <use href="img/icons/stack.svg#check-circle"></use>
+                  </svg>
+                </div>
+              </div>
+              <p>
+                Concentrated horse chestnut essence penetrates deep under the skin and from the very first day restores
+                damaged vessels and prevents further growth of spider veins*
+              </p>
+            </li>
+
+            <li class="components__item">
+              <div class="components__heading heading">
+                <div class="heading__wrapper">
+                  <h4 class="heading__title">Normalizes blood circulation</h4>
+                </div>
+                <div class="heading__icon">
+                  <svg aria-hidden="true" focusable="false" width="16" height="16">
+                    <use href="img/icons/stack.svg#check-circle"></use>
+                  </svg>
+                </div>
+              </div>
+              <p>
+                Centella asiatica improves vascular metabolism and neutralizes blood stasis**
+              </p>
+            </li>
+
+            <li class="components__item">
+              <div class="components__heading heading">
+                <div class="heading__wrapper">
+                  <h4 class="heading__title">Eliminates venous insufficiency</h4>
+                </div>
+                <div class="heading__icon">
+                  <svg aria-hidden="true" focusable="false" width="16" height="16">
+                    <use href="img/icons/stack.svg#check-circle"></use>
+                  </svg>
+                </div>
+              </div>
+              <p>
+                The active ingredients of witch hazel restore the veins to normal and protect against the development of
+                varicose veins***
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="advantages__stats stats">
+          <div class="stats__heading heading">
+            <div class="heading__wrapper">
+              <h2 class="heading__title">Proven by our customers:</h2>
+            </div>
+            <div class="heading__icon">
+              <svg aria-hidden="true" focusable="false" width="16" height="16">
+                <use href="img/icons/stack.svg#thumbs-up"></use>
+              </svg>
+            </div>
+          </div>
+          <ul class="stats__list reset-list">
+            <li class="stats__item">
+              <div class="stats__percentage percentage">
+                <div class="percentage__circle"></div>
+                <div class="percentage__value">94%</div>
+              </div>
+              <div class="stats__text">
+                <p>
+                  Are satisfied with their <b>Veniselle</b> purchase
+                </p>
+              </div>
+            </li>
+
+            <li class="stats__item">
+              <div class="stats__percentage percentage">
+                <div class="percentage__circle"></div>
+                <div class="percentage__value">58%</div>
+              </div>
+              <div class="stats__text">
+                <p>
+                  Saw results after <b>7&nbsp;days</b>
+                </p>
+              </div>
+            </li>
+
+            <li class="stats__item">
+              <div class="stats__percentage percentage">
+                <div class="percentage__circle"></div>
+                <div class="percentage__value">76%</div>
+              </div>
+              <div class="stats__text">
+                <p>
+                  Have bought <b>Veniselle</b> again for their loved ones
+                </p>
+              </div>
+            </li>
+
+            <li class="stats__item">
+              <div class="stats__percentage percentage">
+                <div class="percentage__circle"></div>
+                <div class="percentage__value">87%</div>
+              </div>
+              <div class="stats__text">
+                <p>
+                  Confirmed that they keep <b>Veniselle</b> in their family medkit
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="advantages__product product">
+          <img src="./img/product.png" alt="image of product." width="114" height="232">
+        </div>
+        <div class="advantages__order">
+          <div class="advantages__order-wrapper">
+            <div class="advantages__price price">
+              <div class="price__wrapper">
+                <del class="price__old">$75</del>
+                <span class="price__new">
+                  <span>$39</span>
+                  <small>.90</small>
+                </span>
+              </div>
+              <a class="advantages__button button" href="#form">Buy Veniselle</a>
+            </div>
+            <div class="advantages__timer timer">
+              <h2>Discount left</h2>
+              <div class="timer__count">
+                <span class="timer__hours"></span>
+                <span>:</span>
+                <span class="timer__minutes"></span>
+                <span>:</span>
+                <span class="timer__seconds"></span>
+              </div>
+            </div>
+          </div>
+          <div class="advantages__link">
+            <a class="advantages__button button" href="#form">Buy Veniselle</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="steps__container container">
+        <div class="steps__title">
+          <div class="steps__heading heading">
+            <div class="heading__wrapper">
+              <h2 class="heading__title">Veniselle Cream</h2>
+              <h3 class="heading__subtitle">3 Steps Away From Spider Veins</h3>
+            </div>
+          </div>
+        </div>
+        <ul class="steps__list reset-list">
+          <li class="steps__item">
+            <div class="steps__icon">
+              <svg aria-hidden="true" focusable="false" width="70" height="70">
+                <use href="./img/icons/stack.svg#steps-1"></use>
+              </svg>
+            </div>
+            <div class="steps__text">
+              <p>Apply the cream to the skin and massage gently.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <div class="steps__icon">
+              <svg aria-hidden="true" focusable="false" width="41" height="36">
+                <use href="./img/icons/stack.svg#steps-2"></use>
+              </svg>
+            </div>
+            <div class="steps__text">
+              <p>Repeat every day for 1&nbsp;month.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <div class="steps__icon">
+              <svg aria-hidden="true" focusable="false" width="33" height="35">
+                <use href="./img/icons/stack.svg#steps-3"></use>
+              </svg>
+            </div>
+            <div class="steps__text">
+              <p>In case of severe vascular overgrowth - repeat the course after 2&nbsp;weeks.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contains">
+      <div class="contains__container container">
+        <div class="contains__header">
+          <div class="contains__title">
+            <div class="contains__heading heading">
+              <div class="heading__wrapper">
+                <h2 class="heading__title">Veniselle composition</h2>
+                <h3 class="heading__subtitle">Only plants and nothing extra!</h3>
+              </div>
+            </div>
+          </div>
+          <div class="contains__text">
+            <p>The natural composition is gentle but effective.</p>
+            <p>Doesn't cause addiction.</p>
+          </div>
+        </div>
+        <ul class="contains__list reset-list">
+          <li class="contains__item">
+            <div class="contains__image">
+              <img src="./img/contains-image-1.png" width="88" height="61" alt="component image.">
+            </div>
+            <h4>Horse chestnut and ginkgo biloba</h4>
+            <p>Tones veins and capillaries, narrows dilated areas, stops their overgrowth.</p>
+          </li>
+
+          <li class="contains__item">
+            <div class="contains__image">
+              <img src="./img/contains-image-2.png" width="86" height="77" alt="component image.">
+            </div>
+            <h4>Centella asiatica</h4>
+            <p>
+              Restores blood circulation, improves the permeability and elasticity of blood vessels.
+            </p>
+          </li>
+
+          <li class="contains__item">
+            <div class="contains__image">
+              <img src="./img/contains-image-3.png" width="90" height="86" alt="component image.">
+            </div>
+            <h4>Hamamelis</h4>
+            <p>Improves the condition of veins and arteries, fights against their fragility and brittleness.</p>
+          </li>
+
+          <li class="contains__item">
+            <div class="contains__image">
+              <img src="./img/contains-image-4.png" width="94" height="92" alt="component image.">
+            </div>
+            <h4>Arnica and plantain</h4>
+            <p>Strengthens and cleans the walls of blood vessels, prevents the formation of blood clots.</p>
+          </li>
+
+          <li class="contains__item">
+            <div class="contains__image">
+              <img src="./img/contains-image-5.png" width="79" height="78" alt="component image.">
+            </div>
+            <h4>Chamomile</h4>
+            <p>Gently cares for the skin of the feet, softens and soothes it.</p>
+          </li>
+
+          <li class="contains__item">
+            <div class="contains__image">
+              <img src="./img/contains-image-6.png" width="70" height="93" alt="component image.">
+            </div>
+            <h4>Seaweed and peppermint essential oils</h4>
+            <p>Pleasantly cool and refresh the skin of the legs, relieve fatigue, swelling and heaviness.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="opinion">
+      <div class="opinion__container container">
+        <div class="opinion__title">
+          <div class="opinion__heading heading">
+            <div class="heading__wrapper">
+              <h2 class="heading__title">Veniselle Cream</h2>
+              <h3 class="heading__subtitle">Expert opinion on Veniselle</h3>
+            </div>
+            <div class="heading__icon">
+              <svg aria-hidden="true" focusable="false" width="19" height="19">
+                <use href="img/icons/stack.svg#user"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="opinion__image">
+          <img src="./img/doc.png" width="280" height="220" alt="image of doc.">
+        </div>
+        <div class="opinion__label">
+          <h3>Bitores Mendez</h3>
+          <h4>Experience of work for 16 years</h4>
+          <span>phlebologist</span>
+          <span>angiologist</span>
+        </div>
+        <div class="opinion__text">
+          <p>
+            <b>Veniselle</b> cream is a worthy alternative to sclerotherapy, laser coagulation and other procedures to
+            remove
+            visible spider veins.
+          </p>
+          <p>
+            There is a highly concentrated complex of powerful plants in its composition that not only improves blood
+            circulation, but also significantly narrows the vessels, making them completely invisible on the skin.
+          </p>
+          <p>
+            Additional medication or surgical support is not required
+          </p>
+          <p>
+            So, if you are concerned about spider veins on the legs or other body parts, I advise
+            <b>Veniselle</b>.
+          </p>
+        </div>
+        <div class="opinion__product product">
+          <img src="./img/product.png" alt="image of product." width="114" height="232">
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="features__container container">
+        <div class="features__title">
+          <h3>Why is Veniselle better than laser and sclerotherapy?</h3>
+        </div>
+        <ul class="features__list reset-list">
+          <li class="features__item">
+            <div class="features__icon">
+              <img src="./img/features-icon-1.png" width="20" height="20" alt="">
+            </div>
+            <div class="features__text">
+              <h4>It doesn't hurt</h4>
+              <p>It's just a cream!</p>
+            </div>
+          </li>
+
+          <li class="features__item">
+            <div class="features__icon">
+              <img src="./img/features-icon-2.png" width="20" height="20" alt="">
+            </div>
+            <div class="features__text">
+              <h4>Non-invasive</h4>
+              <p>No needles or incisions!</p>
+            </div>
+          </li>
+
+          <li class="features__item">
+            <div class="features__icon">
+              <img src="./img/features-icon-3.png" width="20" height="20" alt="">
+            </div>
+            <div class="features__text">
+              <h4>Safe</h4>
+              <p>Veniselle has no contraindications.</p>
+            </div>
+          </li>
+
+          <li class="features__item">
+            <div class="features__icon">
+              <img src="./img/features-icon-4.png" width="20" height="20" alt="">
+            </div>
+            <div class="features__text">
+              <h4>Fast</h4>
+              <p>Only 2 minutes a day.</p>
+            </div>
+          </li>
+
+          <li class="features__item">
+            <div class="features__icon">
+              <img src="./img/features-icon-5.png" width="20" height="20" alt="">
+            </div>
+            <div class="features__text">
+              <h4>No rehabilitation</h4>
+              <p>Your lifestyle will remain the same.</p>
+            </div>
+          </li>
+
+          <li class="features__item">
+            <div class="features__icon">
+              <img src="./img/features-icon-6.png" width="20" height="20" alt="">
+            </div>
+            <div class="features__text">
+              <h4>Not expensive</h4>
+              <p>1 tube of Veniselle is 5 times cheaper than 1 laser session.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="comparison">
+      <div class="container">
+        <div class="comparison__title">
+          <h3>More than 24,000 people have already tried Veniselle. </h3>
+        </div>
+      </div>
+
+      <div class="comparison__slider comparison__slider--without">
+        <ul class="comparison__slider-wrapper slider-wrapper reset-list">
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-1.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-2.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-3.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-4.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-5.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-6.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-7.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-8.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-1.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-2.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-3.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-4.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-5.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-6.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-7.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-without-8.png" width="210" height="210" alt="">
+          </li>
+        </ul>
+      </div>
+
+      <div class="comparison__slider comparison__slider--with">
+        <ul class="comparison__slider-wrapper slider-wrapper reset-list">
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-1.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-2.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-3.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-4.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-5.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-6.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-7.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-8.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-1.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-2.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-3.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-4.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-5.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-6.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-7.png" width="210" height="210" alt="">
+          </li>
+          <li class="comparison__slide slide">
+            <img src="./img/comparison-with-8.png" width="210" height="210" alt="">
+          </li>
+        </ul>
+      </div>
+
+      <div class="comparison__container container">
+        <div class="comparison__switch">
+          <p>without Veniselle</p>
+          <label for="toggle">
+            <input type="checkbox" id="toggle">
+          </label>
+          <p>with Veniselle</p>
+        </div>
+        <div style="display: flex; gap: 8px; width: 100%;">
+          <div class="comparison__price price">
+            <div class="price__wrapper">
+              <del class="price__old">$75</del>
+              <span class="price__new">
+                <span>$39</span>
+                <small>.90</small>
+              </span>
+            </div>
+            <a class="comparison__button button" href="#form">Order</a>
+          </div>
+          <div class="comparison__timer timer">
+            <h2>Discount left</h2>
+            <div class="timer__count">
+              <span class="timer__hours"></span>
+              <span>:</span>
+              <span class="timer__minutes"></span>
+              <span>:</span>
+              <span class="timer__seconds"></span>
+            </div>
+          </div>
+        </div>
+        <div class="comparison__link">
+          <a class="comparson__button button" href="#form">Order</a>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="feedback">
+      <div class="feedback__container container">
+        <div class="feedback__title">
+          <h3>Stories of incredible success with Veniselle</h3>
+        </div>
+        <ul class="feedback__list reset-list">
+          <li class="feedback__item">
+            <div class="feedback__heading heading">
+              <div class="feedback__user">
+                <div class="feedback__avatar">
+                  <img src="./img/customer_image-3.png" alt="" width="36">
+                </div>
+                <div class="feedback__signature">
+                  <h4>Maria, 43 y.o.</h4>
+                  <svg aria-hidden="true" focusable="false" width="60" height="11">
+                    <use href="img/icons/stack.svg#stars"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="heading__icon">
+                <svg aria-hidden="true" focusable="false" width="16" height="16">
+                  <use href="img/icons/stack.svg#thumbs-up"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="feedback__cite">
+              <h5>"after a month "spider veins" disappeared"</h5>
+            </div>
+            <div class="feedback__text">
+              <p>
+                After the second childbirth I suddenly noticed veins on my lower thighs that looked like red spider
+                webs.
+              </p>
+              <p>
+                It was too visible, so I had to hide this "web" under long skirts and dresses. Once my friend
+                accidentally saw it and recommended this cream.
+              </p>
+              <p>
+                Of course, I decided to try: what if it helps? And
+                indeed, it helped me - after a month, the "cobweb" disappeared.
+              </p>
+            </div>
+          </li>
+
+          <li class="feedback__item">
+            <div class="feedback__heading heading">
+              <div class="feedback__user">
+                <div class="feedback__avatar">
+                  <img src="./img/customer_image-2.png" alt="" width="36">
+                </div>
+                <div class="feedback__signature">
+                  <h4>Lucia, 34 y.o.</h4>
+                  <svg aria-hidden="true" focusable="false" width="60" height="11">
+                    <use href="img/icons/stack.svg#stars"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="heading__icon">
+                <svg aria-hidden="true" focusable="false" width="16" height="16">
+                  <use href="img/icons/stack.svg#thumbs-up"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="feedback__cite">
+              <h5>"much better than laser"</h5>
+            </div>
+            <div class="feedback__text">
+              <p>
+                I tried to treat spider veins with laser. I had 3 procedures, but after 3 months the vessels on my legs
+                reappeared.
+              </p>
+              <p>
+                I wish I had
+                tried this cream right away. It was much better than the laser. First of all, the veins are gone.
+                They're gone now, completely gone!
+              </p>
+              <p>
+                Now I really regret that I spent so much money and time on going to the doctor! The skin on
+                my legs is even and of normal color. Secondly, six months
+                have passed, and my legs are still clear - there are no vessels, not the smallest one!
+              </p>
+            </div>
+          </li>
+
+          <li class="feedback__item">
+            <div class="feedback__heading heading">
+              <div class="feedback__user">
+                <div class="feedback__avatar">
+                  <img src="./img/customer_image-1.png" alt="" width="36">
+                </div>
+                <div class="feedback__signature">
+                  <h4>Lisa, 38 y.o.</h4>
+                  <svg aria-hidden="true" focusable="false" width="60" height="11">
+                    <use href="img/icons/stack.svg#stars"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="heading__icon">
+                <svg aria-hidden="true" focusable="false" width="16" height="16">
+                  <use href="img/icons/stack.svg#thumbs-up"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="feedback__cite">
+              <h5>“erased all of the spider veins as just like an eraser”</h5>
+            </div>
+            <div class="feedback__text">
+              <p>
+                Even 2 months ago my legs looked as if a huge spider lived inside them and weaved its web every day.
+                Year after year the spider veins grew and it made me sad.
+              </p>
+              <p>
+                I was embarrassed to go to the beach, to wear
+                shorts. So it would have continued all my life, if I had not learned in time about Veniselle.
+              </p>
+              <p>
+                Literally
+                in a month, this cream erased all of the spider veins as just like an eraser. Just one moment - and it's
+                gone!
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="steps steps--second">
+      <div class="steps__container container">
+        <div class="steps__title">
+          <div class="steps__heading heading">
+            <div class="heading__wrapper">
+              <h2 class="heading__title">Veniselle Cream</h2>
+              <h3 class="heading__subtitle">How to order Veniselle?</h3>
+            </div>
+          </div>
+        </div>
+        <ul class="steps__list reset-list">
+          <li class="steps__item">
+            <div class="steps__icon">
+              <svg aria-hidden="true" focusable="false" width="33" height="33">
+                <use href="./img/icons/stack.svg#steps-4"></use>
+              </svg>
+            </div>
+            <div class="steps__text">
+              <p>Fill out the form and click "Order".</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <div class="steps__icon">
+              <svg aria-hidden="true" focusable="false" width="33" height="33">
+                <use href="./img/icons/stack.svg#steps-5"></use>
+              </svg>
+            </div>
+            <div class="steps__text">
+              <p>Wait for an operator's call.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <div class="steps__icon">
+              <svg aria-hidden="true" focusable="false" width="33" height="33">
+                <use href="./img/icons/stack.svg#steps-6"></use>
+              </svg>
+            </div>
+            <div class="steps__text">
+              <p>Get the product at a convenient time and pay for it in a convenient way.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="order">
+      <div class="container">
+        <div class="header inner-header">
+          <div class="header__container">
+            <div class="header__title">
+              <a href="#form">
+                <h1>Veniselle</h1>
+              </a>
+            </div>
+            <div class="header__signs signs">
+              <ul class="signs__list reset-list">
+                <li class="signs__item">
+                  <svg aria-hidden="true" focusable="false" width="36" height="36">
+                    <use href="img/icons/stack.svg#eco"></use>
+                  </svg>
+                </li>
+                <li class="signs__item">
+                  <svg aria-hidden="true" focusable="false" width="36" height="36">
+                    <use href="img/icons/stack.svg#animal"></use>
+                  </svg>
+                </li>
+                <li class="signs__item">
+                  <svg aria-hidden="true" focusable="false" width="36" height="36">
+                    <use href="img/icons/stack.svg#organic"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="header__slogan">
+              <h2>
+                A cream with a professional treatment effect to get rid of spider veins.
+              </h2>
+              <ul class="header__slogan-list reset-list">
+                <li>
+                  <a href="#form">antispider veins</a>
+                </li>
+                <li>
+                  <a href="#form">no injections</a>
+                </li>
+                <li>
+                  <a href="#form">beauty legs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="order__container container">
+        <div class="order__image">
+          <img src="./img/order-image.png" width="276" height="262" alt="image of product.">
+        </div>
+
+        <div class="order__review review">
+          <div class="review__heading heading">
+            <div class="heading__wrapper">
+              <h2 class="heading__title">Veniselle Cream</h2>
+              <h3 class="heading__subtitle">We are chosen by 9 out of 10 customers.</h3>
+            </div>
+            <div class="heading__icon">
+              <svg aria-hidden="true" focusable="false" width="16" height="16">
+                <use href="img/icons/stack.svg#thumbs-up"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review__content">
+            <p>Triple action on damaged and dilated blood vessels:</p>
+            <ul class="review__list reset-list">
+              <li class="review__item">
+                Removes spider veins and vascular asterisks
+              </li>
+              <li class="review__item">
+                Strengthens vessel walls
+              </li>
+              <li class="review__item">
+                Relieves swelling and fatigue
+              </li>
+            </ul>
+          </div>
+          <div class="review__customers">
+            <ul class="review__customers-list reset-list">
+              <li class="review__customers-item">
+                <div class="review__customers-avatar">
+                  <img src="./img/customer_image-3.png" alt="" width="50">
+                </div>
+                <svg aria-hidden="true" focusable="false" width="60" height="11">
+                  <use href="img/icons/stack.svg#stars"></use>
+                </svg>
+              </li>
+              <li class="review__customers-item">
+                <div class="review__customers-avatar">
+                  <img src="./img/customer_image-2.png" alt="" width="50">
+                </div>
+                <svg aria-hidden="true" focusable="false" width="60" height="11">
+                  <use href="img/icons/stack.svg#stars"></use>
+                </svg>
+              </li>
+              <li class="review__customers-item">
+                <div class="review__customers-avatar">
+                  <img src="./img/customer_image-1.png" alt="" width="50">
+                </div>
+                <svg aria-hidden="true" focusable="false" width="60" height="11">
+                  <use href="img/icons/stack.svg#stars"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="order__form form">
+          <div class="form__wrapper">
+            <div class="form__heading heading">
+              <div class="heading__wrapper">
+                <h3 class="heading__subtitle">Veniselle Order Form</h3>
+              </div>
+              <div class="heading__icon">
+                <svg aria-hidden="true" focusable="false" width="16" height="16">
+                  <use href="img/icons/stack.svg#shopping"></use>
+                </svg>
+              </div>
+            </div>
+            <form action="" method="post" id="form">
+              <input class="form__input" name="name" placeholder="Isabella" type="text">
+              <div class="form__input-wrapper">
+                <div class="form__select-wrapper">
+                  <select class="form__input form__input--select" id="country_code_selector" name="country_code">
+                    <option value="MX">MX</option>
+                  </select>
+                </div>
+                <input class="only_number form__input form__input--number" name="phone" placeholder="12-34-5678"
+                  type="tel">
+              </div>
+              <button class="form__submit js_submit button__text button">Order&nbsp;<span>with 50%
+                  discount</span></button>
+            </form>
+          </div>
+          <div class="form__features">
+            <div class="form__price price">
+              <div class="price__wrapper">
+                <del class="price__old">$75</del>
+                <span class="price__new">
+                  <span>$39</span>
+                  <small>.90</small>
+                </span>
+              </div>
+            </div>
+            <div class="form__timer timer">
+              <h2>Discount left</h2>
+              <div class="timer__count">
+                <span class="timer__hours"></span>
+                <span>:</span>
+                <span class="timer__minutes"></span>
+                <span>:</span>
+                <span class="timer__seconds"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="./js/script.js"></script>
+  <script src="./js/percentage.js"></script>
+  <script src="./js/init-swiper.js" type="module"></script>
+  <script src="./js/timer.js"></script>
+</body>
+
+</html>

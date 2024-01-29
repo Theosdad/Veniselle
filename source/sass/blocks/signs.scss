@@ -1,0 +1,32 @@
+.signs {
+    @include border-radius;
+    padding: 6px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6f5b8;
+
+    &__list {
+        display: flex;
+        gap: 6px;
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 12px 15px;
+
+        &__list {
+            gap: 17px;
+        }
+
+        &__item {
+            svg {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+}

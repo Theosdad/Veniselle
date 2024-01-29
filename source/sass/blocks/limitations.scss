@@ -1,0 +1,63 @@
+.limitations {
+    @include border-radius;
+    padding: 12px;
+    background-color: #f8e2e2;  
+    flex-grow: 1;
+
+    &__heading {
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        padding-left: 18px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        color: #000000;
+    }
+
+    &__item {
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: #000000;
+
+            position: absolute;
+            top: 50%;
+            left: -12px;
+            transform: translateY(-50%);
+        }
+    }
+
+    @media (min-width: $desktop) {
+        flex-basis: 568px;
+        padding: 12px 16px;
+
+        &__heading {
+            margin-bottom: 0;
+            h3 {
+                max-width: 450px;
+                font-size: 36px;
+            }
+        }
+
+        &__list {
+            row-gap: 0;
+        }
+
+        &__item {
+            font-size: 16px;
+            line-height: 180%;
+
+            &::before {
+                width: 4px;
+                height: 4px;
+            }
+        }
+    }
+}

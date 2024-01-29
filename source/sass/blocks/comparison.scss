@@ -1,0 +1,232 @@
+.comparison {
+    margin-bottom: 24px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__title {
+        @include border-radius;
+        padding: 12px;
+        background-color: #e6f2f7;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 120%;
+            text-align: center;
+        }
+    }
+
+    &__slider {
+        margin: 8px 0;
+        width: 100%;
+        overflow: hidden;
+
+        &--with {
+            display: none;
+        }
+    }
+
+    &__slider-wrapper {
+        display: flex;
+        gap: 8px;
+
+        position: relative;
+        left: -375px;
+    }
+
+    &__slide {
+        flex-shrink: 0;
+
+        img {
+            @include border-radius;
+        }
+    }
+
+    &__switch {
+        @include border-radius;
+        background-color: #ececec;
+        padding: 16px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 24px;
+
+        transition: background 0.5s ease-in;
+
+        p {
+            font-weight: 700;
+            line-height: normal;
+
+            &:last-child {
+                opacity: 0.5;
+            }
+        }
+
+        label {
+            width: 48px;
+            height: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            position: relative;
+
+            cursor: pointer;
+        }
+
+        input {
+            appearance: none;
+            margin: 0;
+            width: 16px;
+            height: 16px;
+            background-color: #142933;
+            border-radius: 50%;
+
+            position: absolute;
+            left: 2px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+
+            &:checked {
+                transform: translate(28px, -50%);
+                transition: all 0.5 ease-in-out;
+            }
+        }
+
+        &.active {
+            background-color: #f8e9e2;
+            transition: background 0.5s ease-in;
+
+            p {
+                &:first-child {
+                    opacity: 0.5;
+                }
+
+                &:last-child {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__price {
+        width: 100%;
+        padding: 13px 12px;
+
+        &>div {
+            align-items: center;
+        }
+
+        .button {
+            display: none;
+        }
+    }
+
+    &__timer {
+        width: 100%;
+    }
+
+    &__link {
+        @include border-radius;
+        @include padding;
+        background-color: #ececec;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 40px;
+
+        &__container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__title {
+            padding: 26px;
+
+            h3 {
+                font-size: 36px;
+            }
+        }
+
+        &__slide {
+            img {
+                width: auto;
+            }
+        }
+
+        &__switch {
+            width: 48%;
+            max-width: 376px;
+
+            p {
+                font-size: 16px;
+            }
+
+            label {
+                flex-shrink: 0;
+                width: 96px;
+                height: 40px;
+                border-radius: 20px;
+            }
+
+            input {
+                width: 32px;
+                height: 32px;
+                left: 4px;
+
+                &:checked {
+                    transform: translate(56px, -50%);
+                }
+            }
+        }
+
+        &__price {
+            display: flex;
+            justify-content: center;
+            padding: 12px 23px;
+            max-width: 472px;
+            row-gap: 16px;
+            flex-wrap: wrap;
+
+            &>div {
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                column-gap: 16px;
+                margin-right: 13px;
+            }
+
+            .button {
+                display: flex;
+                min-width: 54%;
+                flex-shrink: 0;
+                flex-grow: 1;
+            }
+
+            del {
+                font-size: 36px;
+                font-weight: 700;
+                opacity: 0.5;
+                line-height: 100%;
+            }
+
+            span {
+                line-height: 100%;
+                display: inline-flex;
+            }
+        }
+
+        &__timer {
+            max-width: 280px;
+            width: 37%;
+        }
+
+        &__link {
+            display: none;
+        }
+    }
+}

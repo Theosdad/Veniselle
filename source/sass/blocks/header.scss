@@ -1,0 +1,94 @@
+.header {
+  margin: 8px 0;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__title {
+    @include border-radius;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 9px 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    background-color: #f8e9e2;
+  }
+
+  &__slogan {
+    background-color: #e6f2f7;
+    padding: 10px;
+    flex-grow: 1;
+    @include border-radius;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 7px;
+      line-height: 120%;
+    }
+  }
+
+  &__slogan-list {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+
+    li {
+      padding: 4px 7px;
+      font-size: 10px;
+      text-align: center;
+
+      background-color: #ffffff;
+      border-radius: 30px;
+      flex-grow: 1;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      opacity: 0.5;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &__title {
+      font-size: 36px;
+      line-height: normal;
+      padding: 23px;
+    }
+
+    &__slogan {
+      padding: 15px 37px;
+      padding-left: 268px;
+      background: url('../../img/cream-bg.png') no-repeat -61px -105px, #e6f2f7;
+
+      h2 {
+        text-align: left;
+        font-size: 16px;
+      }
+    }
+
+    &__slogan-list {
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media (min-width: $only-desktop) {
+    &__signs {
+      order: 2;
+    }
+
+    &__slogan {
+      flex-grow: 0;
+      max-width: 640px;
+    }
+  }
+}

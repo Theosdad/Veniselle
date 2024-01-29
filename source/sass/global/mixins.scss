@@ -1,0 +1,15 @@
+@mixin padding {
+    padding: 16px 12px;
+
+    @media (min-width: $desktop) {
+        padding: 24px 16px;
+    }
+}
+
+@mixin border-radius {
+    border-radius: 6px;
+
+    @media (min-width: $desktop) {
+        border-radius: 12px;
+    }
+}

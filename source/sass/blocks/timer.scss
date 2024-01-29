@@ -1,0 +1,33 @@
+.timer {
+    @include border-radius;
+    background: #ffdf74;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 9px;
+
+    h2 {
+        line-height: 75%;
+        text-align: center;
+    }
+
+    &__count {
+        display: flex;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 72%;
+    }
+
+    @media (min-width: $desktop) {
+        h2 {
+            font-size: 16px;
+        }
+
+        &__count {
+            font-size: 34px;
+        }
+    }
+}
