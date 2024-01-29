@@ -1,0 +1,1 @@
+function updateCircles(){document.querySelectorAll(".percentage").forEach((e=>{const t=e.querySelector(".percentage__value"),r=e.querySelector(".percentage__circle"),c=parseFloat(t.textContent)/100*360;r.style.setProperty("--percentage",`${c}deg`)}))}document.addEventListener("DOMContentLoaded",(function(){updateCircles()}));
